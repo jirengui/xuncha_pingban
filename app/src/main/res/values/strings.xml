@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">巡查</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="xunchajilu">巡查记录</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_user_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_password_hint_2">请确认密码</string>
+    <string name="login2">登录</string>
+    <string name="register3">注册</string>
+    <string name="back"> 返回 </string>
+    <string name="login_yanzheng_hint">请输入验证码</string>
+    <string name="laoshiqingkuang">老师情况</string>
+    <string name="banjiqingkuang">班级情况</string>
+    <string name="xunchaqingkuang">巡查情况</string>
+    <string name="xuncharenqingkuang">巡查人情况</string>
+
+</resources>

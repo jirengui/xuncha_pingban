@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_5"
+    android:fitsSystemWindows="true"
+    tools:context="p03.example.li.xuncha.MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="南信院: "-->
+        <!--android:textColor="@color/text"-->
+        <!--android:layout_alignLeft="@+id/relativeLayout"-->
+        <!--android:layout_above="@+id/relativeLayout"-->
+        <!--/>-->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        >
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/transparent"
+            android:drawablePadding="3dp"
+            android:hint="@string/login_user_hint"
+            android:textColorHint="@color/gray_remin"
+            android:paddingLeft="3dp"
+            android:textSize="18sp"
+            android:textColor="@color/gray_remin"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edit_username"
+            android:background="@color/gray_remin" />
+
+        <EditText
+            android:layout_marginTop="6dp"
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/view"
+            android:background="@color/transparent"
+            android:drawablePadding="3dp"
+            android:hint="@string/login_password_hint"
+            android:textColorHint="@color/gray_remin"
+            android:inputType="textPassword"
+            android:paddingLeft="3dp"
+            android:textSize="18sp"
+            android:textColor="@color/gray_remin"/>
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edit_pwd"
+            android:background="@color/gray_remin" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_blue_pressed_shape"
+            android:gravity="center"
+            android:text="@string/login2"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:layout_below="@+id/view_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:text="忘记密码" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/jilu"
+            android:title="计划通知" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/kujieyongyu"
+            android:title="快捷用语" />
+        <item
+            android:id="@+id/nav_zhiNengFenXi"
+            android:icon="@drawable/zhineng"
+            android:title="智能分析" />
+    </group>
+
+    <item android:title="个人">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/xiaoxi"
+                android:title="消息" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/shezhi"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_tuichu"
+                android:icon="@drawable/tuichudenglu"
+                android:title="退出登录" />
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/album_White"
+    android:orientation="vertical"
+    tools:context="p03.example.li.xuncha.XiaoxiActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/xiaoxi_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fanhui_xiaoxi"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="消息"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_xiaoxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:fastScrollEnabled="true"
+        android:transcriptMode="normal">
+
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:id="@+id/xx2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/album_dp_6"
+        android:background="@color/cardview_dark_background">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/xiaoxi_se"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/album_dp_6"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/album_dp_6"
+            android:layout_marginRight="@dimen/album_dp_6"
+            android:layout_weight="2"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入"
+            android:paddingLeft="@dimen/album_dp_6" />
+
+        <Button
+            android:id="@+id/bt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发送" />
+    </LinearLayout>
+</LinearLayout>

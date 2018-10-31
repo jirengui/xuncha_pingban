@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_White"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/chart_laoshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/laoshiqingkuang"
+        />
+    <Button
+        android:id="@+id/chart_banji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banjiqingkuang"/>
+    <Button
+        android:id="@+id/chart_xuncha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xunchaqingkuang"/>
+    <Button
+        android:id="@+id/chart_xuncharen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xuncharenqingkuang"/>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="p03.example.li.xuncha">
+
+    <!-- 声明使用相机 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="landscape"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".SplashActivity"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeSplash1">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- &lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt; -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".User_Login"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name=".User_yanzheng"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".UserInformationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".XunChuaJiLu"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ImageDetailsActivity"
+            android:screenOrientation="landscape"
+            />
+
+        <activity android:name=".XunchaDetailsActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".KuaiJieYongYueActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:name=".XiaoxiActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+             />
+        <activity android:name=".ChartActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".ChartBaritemActivity"
+            android:screenOrientation="landscape"
+            />
+    </application>
+
+</manifest>

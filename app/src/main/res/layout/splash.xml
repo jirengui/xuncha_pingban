@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing"
+    tools:context="p03.example.li.xuncha.SplashActivity">
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash_tv"
+        android:textSize="15dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/tv_njxuncha"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_nj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_njxuncha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/album_dp_6"
+        android:lineSpacingExtra="@dimen/album_dp_10"
+        android:text="南京信息职业技术学院"
+        android:textColor="@color/black_semi_transparent"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/tv_njxuncha"
+        android:layout_below="@+id/splash_tv"
+        android:layout_marginTop="212dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:lineSpacingExtra="@dimen/album_dp_10"
+        android:layout_centerInParent="true"
+        android:textSize="28dp"
+        android:textColor="@color/black_semi_transparent"
+        android:text="智能教学巡查移动平台"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="20dp"
+        android:text="计算机与软件学院制"/>
+
+
+</RelativeLayout>

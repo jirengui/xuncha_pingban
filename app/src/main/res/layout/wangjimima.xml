@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_edit">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:hint="@string/login_user_hint"
+            android:textColorHint="@color/gray_remin"
+            android:inputType="phone"
+            android:paddingLeft="3dp"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edit_username"
+            android:background="@color/gray_remin" />
+
+        <EditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/view"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:hint="@string/login_yanzheng_hint"
+            android:textColorHint="@color/gray_remin"
+            android:inputType="number"
+            android:paddingLeft="3dp"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edit_pwd"
+            android:background="@color/gray_remin" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@mipmap/back1"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-80dp"
+        android:text="@string/back"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_pressed_shape"
+        android:gravity="center"
+        android:text="@string/login2"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="38dp" />
+
+</RelativeLayout>
