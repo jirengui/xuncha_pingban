@@ -28,12 +28,11 @@ import java.util.List;
  */
 
 public class SocketFuWuQi {
-    //192.168.1.114 306B宿舍网
+
     //校园网172.29.135.19
     //手机热点192.168.43.57
-    //阿里云IP：39.108.14.189
     //203: 192.168.1.114
-    private String ip = "39.108.14.189";
+    private String ip = "192.168.43.57";
     private Bitmap bmp = null;
     private File file;
     private int lenth = 0;
